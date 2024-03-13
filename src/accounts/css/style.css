@@ -1,0 +1,133 @@
+:root
+{
+    /* --headerBgColor: #2a67b1; */
+    --headerBgColor: #2a67b1;
+    --mainBgColor:#fff;
+    --sideBarColor:#def1fc;
+    --footerColor:#92bad4;
+    --fontSize:15px;
+    --color: #fff;
+    --hoverbgColor:#000;
+    --hoverTextColor:#000;
+    --focus:#fec530; 
+    --disabledTextColor:#c2c2bf;
+    
+    /* page color */
+
+    --paymentVoucher:#f8f8ea;
+    --contraVoucher:#ededec;
+}
+.bg-title-blue
+{
+    background-color: var(--headerBgColor);
+    color: white;
+}
+.text-blue
+{
+    color: #3f9ad7;
+    font-size:15px;
+    font-weight: 400;
+}
+body
+{
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.caerp_main_wrapper
+{
+    overflow: hidden;
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column; */
+}
+/* =========== SideBar Header Starts Here ================= */
+.caerp_header 
+{
+    background-color: var(--headerBgColor);
+    height: 4.3rem;
+}
+.caerp_header :disabled
+{
+    color:#c2bfbf;
+}
+/* =========== SideBar Header Starts Here ================= */
+
+/* ===========SideBar Css Starts Here================= */
+.caerp_sidebar
+{
+    height: calc(100% - 50px);
+    width: 180px;
+    position: fixed;
+    /* z-index: 999; */
+    top: 4.3rem;
+    right: 0;
+    background-color: #def1fc;
+    overflow-x: hidden;
+}
+.caerp_sidebar button
+{
+    padding: 1px;
+    background-color: #fff;
+}
+
+.caerp_sidebar :disabled
+{
+    color: #c2bfbf;
+}
+/* ===========SideBar Css Ends Here================= */
+
+.caerp_footer
+{
+    background-color: var(--footerColor);
+    height: 2rem;
+    margin-top: auto;
+    width:calc(100% - 180px);
+    padding-left: 3px;
+}
+.caerp_footer button
+{
+    padding: 0px;
+    flex-grow: 1;
+    background-color: #fff;
+}
+.caerp_footer :disabled
+{
+    color: #c2bfbf;
+}
+/* ===========Content Css Starts Here================= */
+.caerp_content {
+    width: calc(100% - 180px);
+
+    /* width: 100%; */
+    /* height: calc(100% - 4.3rem - 2rem); */
+    height: calc(100vh - 6.3rem);
+    /* height: 100vh; */
+    box-sizing: border-box; /* Ensure that padding and border are included in the width and height */  
+    overflow: auto; /* Add overflow property to handle content overflow */  
+
+}
+/* ===========Content Css Starts Here================= */
+/* =================================================== */
+.caerp_breadcrumbs
+
+{
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #92bad4;
+}
+/* Voucher pages css starts here */
+.payment_voucher 
+{
+    background-color: var(--paymentVoucher);
+}
+.contra_voucher 
+{
+    background-color: var(--contraVoucher);
+}
+.voucher_title
+{
+    background-color:var(--headerBgColor) ;
+}
